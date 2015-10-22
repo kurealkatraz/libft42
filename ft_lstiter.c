@@ -6,7 +6,7 @@
 /*   By: mgras <mgras@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/06 22:30:00 by mgras             #+#    #+#             */
-/*   Updated: 2015/10/21 13:36:26 by mgras            ###   ########.fr       */
+/*   Updated: 2015/10/22 11:42:03 by mgras            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	while (lst != NULL)
-	{
-		f(lst);
-		lst = lst->next;
-	}
+	if (f)
+		while (lst != NULL)
+		{
+			f(lst);
+			lst = lst->next;
+		}
 }

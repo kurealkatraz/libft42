@@ -6,7 +6,7 @@
 /*   By: mgras <mgras@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/04 18:22:34 by mgras             #+#    #+#             */
-/*   Updated: 2015/04/02 15:25:14 by mgras            ###   ########.fr       */
+/*   Updated: 2015/11/29 22:51:13 by mgras            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <sys/types.h>
+# include <sys/uio.h>
+# define BUFF_SIZE 42
 
 typedef struct		s_list
 {
@@ -98,5 +101,6 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 **	PERSONAL TOUCH
 */
 char				*ft_strndup(const char *s1, size_t size);
+int					get_next_line(const int fd, char **line);
 
 #endif

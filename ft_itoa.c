@@ -6,13 +6,13 @@
 /*   By: mgras <mgras@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/06 17:49:14 by mgras             #+#    #+#             */
-/*   Updated: 2015/03/06 21:49:12 by mgras            ###   ########.fr       */
+/*   Updated: 2015/10/21 15:19:17 by mgras            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void		lengths(int n, size_t *len, int *weight)
+static void		ft_lengths(int n, size_t *len, int *weight)
 {
 	*len = 1;
 	if (n >= 0)
@@ -35,7 +35,7 @@ char			*ft_itoa(int n)
 	size_t		cur;
 	char		*str;
 
-	lengths(n, &len, &weight);
+	ft_lengths(n, &len, &weight);
 	str = (char *)malloc(sizeof(*str) * (len + 1));
 	if (str == NULL)
 		return (NULL);

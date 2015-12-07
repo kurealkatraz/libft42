@@ -6,7 +6,7 @@
 /*   By: mgras <mgras@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/05 11:57:08 by mgras             #+#    #+#             */
-/*   Updated: 2015/10/22 11:43:31 by mgras            ###   ########.fr       */
+/*   Updated: 2015/03/06 21:50:28 by mgras            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	int		ss;
 
 	ss = 0;
-	if (f)
-		while (*s)
-			f(ss++, s++);
+	while (*s)
+		f(ss++, s++);
 }

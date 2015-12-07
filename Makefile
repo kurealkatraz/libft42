@@ -6,7 +6,7 @@
 #    By: mgras <mgras@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/03/05 17:03:04 by mgras             #+#    #+#              #
-#    Updated: 2015/04/02 15:23:53 by mgras            ###   ########.fr        #
+#    Updated: 2015/12/01 21:39:06 by mgras            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,8 @@ SRC_NAME =	ft_atoi.c \
 			ft_strsub.c \
 			ft_strtrim.c \
 			ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c \
+			get_next_line.c\
 
 SRC = $(addprefix $(SRC_PATH), $(SRC_NAME))
 
